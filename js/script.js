@@ -34,33 +34,62 @@ form.addEventListener('submit',function calculate(event) {
     let dayOfTheWeek = Math.trunc((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7)   
     console.log(dayOfTheWeek)
 
-    document.getElementById('weekday').value = 'days[dayOfTheWeek]';
+    if(dayOfTheWeek ===0){
+        document.getElementById("weekday").value = "Sunday";
+    }
+    else if(dayOfTheWeek ===1){
+        document.getElementById("weekday").value = "Monday";
+    }
+    else if(dayOfTheWeek ===2){
+        document.getElementById("weekday").value = "Tuesday";
+    }
+    else if(dayOfTheWeek ===3){
+        document.getElementById("weekday").value = "Wednesday";
+    }
+    else if(dayOfTheWeek ===4){
+        document.getElementById("weekday").value = "Thursday";
+    }
+    else if(dayOfTheWeek ===5){
+        document.getElementById("weekday").value = "Friday";
+    }
+    else if(dayOfTheWeek ===6){
+        document.getElementById("weekday").value = "Saturday";
+    }
+    
 
-    if(gender === male){
+
+    if(gender === "male"){
         if(dayOfTheWeek === 0){
-           alert("Kwasi")
+            document.getElementById('akan').value = "Kwasi";
+        //    alert("Kwasi")
         }
         else if(dayOfTheWeek === 1){
-            alert("Kwadwo")
+            document.getElementById('akan').value = "Kwadwo";
+            // alert("Kwadwo")
         }
         else if(dayOfTheWeek === 2){
-            alert("Kwabena")
+            document.getElementById('akan').value = "Kwabena";
+            // alert("Kwabena")
         }
         else if(dayOfTheWeek === 3){
-            alert("Kwaku")
+            document.getElementById('akan').value = "Kwaku";
+            // alert("Kwaku")
         } 
         else if(dayOfTheWeek === 4){
-        alert("Yaw")
+            document.getElementById('akan').value = "Yaw";
+        // alert("Yaw")
         }
 
         else if(dayOfTheWeek === 5){
-          alert("Kofi")
+            document.getElementById('akan').value = "Kofi";
+        //   alert("Kofi")
         }
         else if(dayOfTheWeek === 6){
-           alert("Kwame")
+            document.getElementById('akan').value = "Kwame";
+        //    alert("Kwame")
         }
 
-}else if(gender === female){
+}else if(gender === "female"){
     if(dayOfTheWeek === 0){
         document.getElementById('akan').value = "Akosua";
     }
