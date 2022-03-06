@@ -21,45 +21,33 @@
           <div class="form-control">
             <form class="row lg-3" action="#">
               <div class="col-12">
-                <label for="date">Enter your date of birth.(1-31)</label> <br />
+                <label for="date" class="label" >Enter your date of birth.(1-31)</label> <br />
                 <input type="number" id="date" value=""placeholder="Date" /><br />
               </div>
               <div class="col-12">
+                  <label for="year">Enter the year you were born.(eg.1989)</label><br>
+                <input type="number" id="year" placeholder="Year" required /><br />
+              </div>
+              <div class="col-12 ">
+              
                 <label for="month">Enter your birth month. (1-12)</label><br />
                 <input type="number" id="month" value="" placeholder="Month" required/><br />
               </div>
               <div class="col-12">
-                <label for="year">Enter the year you were born.(eg.1989)</label><br />
-                <input type="number" id="year" placeholder="Year" required /><br />
+                  <label for="gender">Select your gender.</label><br>
+                  <input type="radio" name="gender" id="male" value="Male"/>Male  <br>               
+                  <input type="radio" name="gender" id="female" value="Female"/>Female <br>              
+        
+                    <button type="submit" class="bt" id="button" > Submit</button>
               </div>
-              <div class="col-12">
-                <label for="gender">Select your gender.</label><br />
-                <p>
-                  <input
-                    type="radio"
-                    name="gender"
-                    id="male"
-                    value="Male"
-                  />Male
-                </p>
-                <p>
-                  <input
-                    type="radio"
-                    name="gender"
-                    id="female"
-                    value="Female"
-                  />Female
-                </p>
-              </div>
-              <button type="submit" class="btn">Submit</button>
               <p class="results">Results:</p>
               <div class="col-md-4">
-                <label for="weekday" class="form-label"
+                <label for="weekday" class="label"
                   >You were born on a:</label
                 ><br />
                 <input type="text" class="form-control" name="" id=weekday">
 
-                <label for="akan" class="form-label">Your Akan name is:</label>
+                <label for="akan" class="label">Your Akan name is:</label>
                 <input type="text" class="form-control" name="" id="akan" />
               </div>
             </form>
