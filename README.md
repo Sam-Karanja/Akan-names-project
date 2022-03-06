@@ -1,14 +1,11 @@
 
 #### Version v1.1.0
 
-![landing page](../images/landing-page.png)
-
 ### Description
-This is a my portfolio website that shows who I am as a developer, some of the projects that I've previously worked on, the technologies I use and my contact information.
+This is a birthday calculator website in which a user enters their date of birth, month, year and gender,and the site outputs the day of the week they were born. The site also displays the user's Akan names based on their gender and the day of the week that they were born.
 
 ### Demo
-Here is a live link to the website. https://karanjasam210.github.io/Portfolio-website/
-
+Here is a live link to the website. 
 
 ### By Samuel Karanja Murigi
 
@@ -21,6 +18,8 @@ Here is a live link to the website. https://karanjasam210.github.io/Portfolio-we
 ### Technologies
 * HTML- For structuring the webpage.
 * CSS- For styling the webpage.
+* Bootstrap- For page responsiveness. 
+* Javascript- For page interactiveness.
 
 ### To-Do
 * Make the site more responsive.
