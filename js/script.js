@@ -1,4 +1,4 @@
-const days=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 console.log(days[3]);
 
 let data = document.getElementById("form")
@@ -24,7 +24,10 @@ form.addEventListener('submit',function calculate(event) {
     let gender = document.getElementById('gender').value;
     console.log(gender) 
 
-    let dayOfTheWeek =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
+    let dayOfTheWeek = Math.trunc((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7)
     document.getElementById(weekday).value = days[dayOfTheWeek];
+
+  
+    
 
 })
