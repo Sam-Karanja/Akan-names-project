@@ -27,7 +27,53 @@ form.addEventListener('submit',function calculate(event) {
     let dayOfTheWeek = Math.trunc((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7)
     document.getElementById(weekday).value = days[dayOfTheWeek];
 
-  
+    if(gender === male){
+        if(dayOfTheWeek === 0){
+            document.getElementById('akan').value = "Kwasi"
+        }
+        else if(dayOfTheWeek === 1){
+            document.getElementById('akan').value = "Kwadwo"
+        }
+        else if(dayOfTheWeek === 2){
+            document.getElementById('akan').value = "Kwabena"
+        }
+        else if(dayOfTheWeek === 3){
+            document.getElementById('akan').value = "Kwaku"
+        }
+        else if(dayOfTheWeek === 4){
+            document.getElementById('akan').value = "Yaw"
+        }
+        else if(dayOfTheWeek === 5){
+            document.getElementById('akan').value = "Kofi"
+        }
+        else if(dayOfTheWeek === 6){
+            document.getElementById('akan').value = "Kwame"
+        }
+
+}else if(gender === female){
+    if(dayOfTheWeek === 0){
+        document.getElementById('akan').value = "Akosua"
+    }
+    else if(dayOfTheWeek === 1){
+        document.getElementById('akan').value = "Adwoa"
+    }
+    else if(dayOfTheWeek === 2){
+        document.getElementById('akan').value = "Abenaa"
+    }
+    else if(dayOfTheWeek === 3){
+        document.getElementById('akan').value = "Akua"
+    }
+    else if(dayOfTheWeek === 4){
+        document.getElementById('akan').value = "Yaa"
+    }
+    else if(dayOfTheWeek === 5){
+        document.getElementById('akan').value = "Afua"
+    }
+    else if(dayOfTheWeek === 6){
+        document.getElementById('akan').value = "Ama"
+    }
+
+}
     
 
 })
