@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <title>Akan-Names</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="card col-8 mx-auto">
+      <div class="row">
+        <div class="card col-8 mx-auto">
+          <h2>Birthday Calculator</h2>
+          <p class="mt-4">
+            To calculate the day of the week your were born, please fill in your
+            details in the form below.
+          </p>
 
-    <div>
-        <p>Birthday Calculator</p>
-        <p class="mt-4">To calculate the day of the week your were born, please fill in your details in the form below.</p>       
-    </div>
-    <div class="form-control">
-        <form class="row lg-3" action="#">
-            <label for="date">Enter your date of birth.</label> <br>
-            <input type="number" id="date" value=""><br>
-            <label for="month">Enter your birth month.</label><br>
-            <input type="number" id="month" value=""><br>
-            <label for="year">Enter the year you were born.</label><br>
-            <input type="number" id="year"><br>
-            <label for="gender">Select your gender.</label><br>
-            <p>    <input type="radio" name="gender" id="gender" value="Male">Male</p>
-            <p><input type="radio" name="gender" id="female" value="Female" >Female</p>
-            <button type="submit">Submit</button>
-            <p class="results">Results:</p>
-            <div class="col-md-4">
-                <label for="weekday" class="form-label">You were born on a:</label><br>
+          <div class="form-control">
+            <form class="row lg-3" action="#">
+              <div class="col-12">
+                <label for="date">Enter your date of birth.(1-31)</label> <br />
+                <input type="number" id="date" value=""placeholder="Date" /><br />
+              </div>
+              <div class="col-12">
+                <label for="month">Enter your birth month. (1-12)</label><br />
+                <input type="number" id="month" value="" placeholder="Month" required/><br />
+              </div>
+              <div class="col-12">
+                <label for="year">Enter the year you were born.(eg.1989)</label><br />
+                <input type="number" id="year" placeholder="Year" required /><br />
+              </div>
+              <div class="col-12">
+                <label for="gender">Select your gender.</label><br />
+                <p>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="Male"
+                  />Male
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="Female"
+                  />Female
+                </p>
+              </div>
+              <button type="submit" class="btn">Submit</button>
+              <p class="results">Results:</p>
+              <div class="col-md-4">
+                <label for="weekday" class="form-label"
+                  >You were born on a:</label
+                ><br />
                 <input type="text" class="form-control" name="" id=weekday">
 
-                <label for="akan" class="form-label" >Your Akan name is:</label>
-                <input type="text" class="form-control" name="" id="akan">
-            </div>
-            
-
-        </form>
-    </div>
-
-            </div>
+                <label for="akan" class="form-label">Your Akan name is:</label>
+                <input type="text" class="form-control" name="" id="akan" />
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-
-
-
-    
-
-
-
-</body>
+  </body>
 </html>
