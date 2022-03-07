@@ -11,9 +11,14 @@ Here is a live link to the website.
 
 
 ### Installation
+* Click the live link in the repository or copy it and paste it on your browser.
 * Open the browser
-* Click the live link in the About section or copy it and paste it on your browser.
 * Browse the site at your own convenience
+
+
+### Cloning
+If you would like to help make this site better, you are allowed to clone the repository on https://github.com/Sam-Karanja/Akan-names-project.
+Once you have cloned the repository, you can add changes and commit.
 
 ### Technologies
 * HTML- For structuring the webpage.
