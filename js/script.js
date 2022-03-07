@@ -7,21 +7,19 @@ form.addEventListener('submit',function calculate(event) {
 
     let DD = parseInt(document.getElementById('date').value);
     if (DD < 0 || DD > 31){
-        alert("You have entered an invalid date")
+        alert("Invalid!! Please enter date in range 1 - 31")
     }
     
     let MM = parseInt(document.getElementById('month').value);
     if(MM < 0 || MM > 12){
-        alert("You have entered an invalid month")
+        alert("Invalid!! Please enter month in range 1 - 12")
     }
 
     if(MM = 2 && DD > 29){
        
-            alert("You have entered an invalid date")
-        
-        document.getElementById("weekday").value = "N/A"
-        document.getElementById("akan").value = "N/A"
+            alert("Invalid!! Please enter date in range 1 - 29 for February")
     }
+
 
     let year = parseInt(document.getElementById('year').value);
     let CC = parseInt(document.getElementById('year').value.slice(0,2));
