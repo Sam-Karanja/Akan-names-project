@@ -1,11 +1,4 @@
-const days=[];
-days[0] = "Sunday"
-days[1] = "Monday"
-days[2] = "Tuesday"
-days[3] = "Wednesday"
-days[4] = "Thursday"
-days[5] = "Friday"
-days[6] = "Saturday"
+const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 console.log(days[5]);
 
 let data = document.getElementById("form")
@@ -22,6 +15,14 @@ form.addEventListener('submit',function calculate(event) {
         alert("You have entered an invalid month")
     }
 
+    if(MM = 2 && DD > 29){
+       
+            alert("You have entered an invalid date")
+        
+        document.getElementById("weekday").value = "N/A"
+        document.getElementById("akan").value = "N/A"
+    }
+
     let year = parseInt(document.getElementById('year').value);
     let CC = parseInt(document.getElementById('year').value.slice(0,2));
     console.log(CC)
@@ -36,24 +37,37 @@ form.addEventListener('submit',function calculate(event) {
 
     if(dayOfTheWeek ===0){
         document.getElementById("weekday").value = "Sunday";
+        // document.getElementById("weekday").value = '(days[0])'
     }
     else if(dayOfTheWeek ===1){
         document.getElementById("weekday").value = "Monday";
+        // document.getElementById("weekday").value = '(days[1])'
+
     }
     else if(dayOfTheWeek ===2){
         document.getElementById("weekday").value = "Tuesday";
+        // document.getElementById("weekday").value = '(days[2])'
+
     }
     else if(dayOfTheWeek ===3){
         document.getElementById("weekday").value = "Wednesday";
+        // document.getElementById("weekday").value =' (days[3])'
+
     }
     else if(dayOfTheWeek ===4){
         document.getElementById("weekday").value = "Thursday";
+        // document.getElementById("weekday").value = '(days[4])'
+
     }
     else if(dayOfTheWeek ===5){
         document.getElementById("weekday").value = "Friday";
+        // document.getElementById("weekday").value = '(days[5])'
+
     }
     else if(dayOfTheWeek ===6){
         document.getElementById("weekday").value = "Saturday";
+        // document.getElementById("weekday").value =' (days[6])'
+
     }
     
 
