@@ -5,7 +5,7 @@
 This is a birthday calculator website in which a user enters their date of birth, month, year and gender,and the site outputs the day of the week they were born. The site also displays the user's Akan names based on their gender and the day of the week that they were born.
 
 ### Demo
-Here is a live link to the website. 
+Here is a live link to the website. https://sam-karanja.github.io/Akan-names-project/
 
 ### By Samuel Karanja Murigi
 
