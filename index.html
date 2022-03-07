@@ -11,49 +11,96 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="card col-md-6">
-         <div class="intro">
-            <h2>Birthday Calculator</h2>
+       
+
+        <div class="card">
+          <div class="intro">
+            <h1>Birthday Calculator</h1>
+        <p>
+          Most people do know when their birthdays are, but some might not know
+          what day of the week they were born. Luckily for us, there are ways to
+          calculate the day of the week from a specific date. This is an
+          application that allows a user to input their date of birth,
+          calculates the day of the week they were born and born based on their
+          gender and outputs their Akan name.
+        </p>
+
+        <p>
+          Akan names are derived from Ghanian culture. Frequently in Ghana,
+          children are given their first name as a 'day name' which corresponds
+          to the day in the week they were born.
+        </p>
             <p>
-              To calculate the day of the week your were born, please fill in your
-              details in the form below.
+              To calculate the day of the week your were born, please fill in
+              your details in the form below.
             </p>
-         </div>
+          </div>
 
           <div class="form-control">
-            <form class="row " id="form" action="#">
+            <form class="row" id="form" action="#">
               <div class="col-12">
-                <label for="date" class="label" >Enter your date of birth.(1-31)</label> <br />
-                <input type="number" id="date" value=""placeholder="Date" /><br />
+                <label for="date" class="label"
+                  >Enter your date of birth.(1-31)</label
+                >
+                <br />
+                <input
+                  type="number"
+                  id="date"
+                  value=""
+                  placeholder="Date"
+                /><br />
               </div>
               <div class="col-12">
-                  <label for="year">Enter the year you were born.(eg.1989)</label><br>
-                <input type="number" id="year" placeholder="Year" required /><br />
+                <label for="year">Enter the year you were born.(eg.1989)</label
+                ><br />
+                <input
+                  type="number"
+                  id="year"
+                  placeholder="Year"
+                  required
+                /><br />
               </div>
-              <div class="col-12 ">
-              
+              <div class="col-12">
                 <label for="month">Enter your birth month. (1-12)</label><br />
-                <input type="number" id="month" value="" placeholder="Month" required/><br />
+                <input
+                  type="number"
+                  id="month"
+                  value=""
+                  placeholder="Month"
+                  required
+                /><br />
               </div>
               <div class="col-12">
-                  <label for="gender">Select your gender.</label><br>
-                 <select name="" id="gender" required>
-                     <option selected disabled value="">Choose Gender</option>
-                     <option value="male">Male</option>
-                     <option value="female">Female</option> <br>
+                <label for="gender">Select your gender.</label><br />
+                <select name="" id="gender" required>
+                  <option selected disabled value="">Choose Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <br />
+                </select>
+                <br />
 
-                 </select>   <br>         
-        
-                    <button type="submit" class="bt" id="button" > Submit</button>
+                <button type="submit" class="bt" id="button">Submit</button>
               </div>
               <p class="results">Results:</p>
               <div class="col-md-4">
-                <label for="weekday" class="label"
-                  >You were born on a:</label
+                <label for="weekday" class="label">You were born on a:</label
                 ><br />
-                <input type="text" class="form-control" name="" id=weekday placeholder="">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="weekday"
+                  placeholder=""
+                />
                 <label for="akan" class="label">Your Akan name is:</label>
-                <input type="text" class="form-control" name="" id="akan" placeholder="" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="akan"
+                  placeholder=""
+                />
               </div>
             </form>
           </div>
